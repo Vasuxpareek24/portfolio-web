@@ -1,0 +1,408 @@
+body {
+ background-color:#0e0e0e;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 10vw;
+}
+.top-name {
+  display: flex;
+  height: 100%;
+  background-color: #22211d;
+  align-items: center ;
+  font-weight: bold;
+  color: #d3bea5;
+  font-size:50px;
+  
+}
+
+.first-details {
+  display: flex;
+  height: 40vw;
+/*  border: 2px solid;
+  border-color: white; */
+}
+.name-cv {
+  /* border: 2px solid white; */
+  width: 50%;
+}
+#hello {
+  color: white;
+  font-weight: bolder;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-size: 100px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideup 0.5s ease-out forwards;
+}
+#my-name {
+  color: #dac5a6;
+  margin-left: 10vw;
+  white-space: nowrap;
+  font-size: 3vw;
+  margin-top: 7px;
+  text-shadow: 0px 0px 3px white;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideup 0.5s ease-out forwards;
+}
+#video-editor {
+  color: white;
+  font-size: 2vw;
+  margin-left: 10vw;
+  margin-top: 10px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(80px);
+  animation: slideup 0.5s ease-out forwards;
+}
+#download-cv {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 10vw;
+  height: 50px;
+  width: 200px;
+  background-color: #dac5a6;
+  border:none;
+  border-radius: 6px;
+  /* border-radius: 1vw;
+  width: 24vw; */
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideup 0.5s ease-out forwards;
+}
+
+
+.top-info {
+  color: #dac5a6;
+  font-size:20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 20px;
+  text-shadow: 0px 0px 3px white;
+}
+.top-info-p {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideup 0.5s ease-out forwards;
+}
+@keyframes slideup {
+    from {opacity: 0;
+    transform: translateY(50px);
+    transform: translateY(80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Image Section*/
+
+.my-image {
+  height: 450px;
+  /* background-color: sandybrown; */
+  justify-items: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.first-image {
+  width:220px;
+  max-width: 100%;
+  height: 450px;
+  background-color: #dac5a6;
+  justify-items: center;
+  
+ 
+}
+.real-img img {
+  overflow: hidden;
+  z-index: +1;
+  height: 400px;
+  padding-top: 50px;
+  transform: scale(1.3)
+}
+
+.down-image {
+  box-shadow: 0px -20px 100px rgba(218, 197, 166, 0.5);
+  width: 100%;
+  height: 50px;
+  white-space: nowrap;
+  background: #f8f8f8;
+  position: relative;
+  max-height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  transform: translateY(3px);
+  animation: fadeInSlide 1s ease-out forwards;
+  animation-timeline: view();
+  
+}
+.biography {
+  align-items: center ;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  
+  transform: translateY(3px);
+  animation: fadeInSlide 1s ease-out forwards;
+  animation-timeline: view();
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0.3;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  .who-i {
+  position: relative;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.who-i-am {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  margin-top: 50px;
+  height: 30px;
+  color: white;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.l-line {
+  display: flex;
+  height: 60px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 3px 40px rgba(218, 197, 166, 0.02);;
+}
+#l-line-div {
+  margin-top: 10px;
+  width: 2px;
+  height: 50px;
+  border-radius: 1px;
+  background-color: #dac5a6;
+  
+}
+
+.two-image {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  .two-image-div {
+    height: 400px;
+    width: 100%;
+    /* box-shadow: 0px 0px 25px rgba(218, 197, 166, 0.3); */
+    background-image: url(editor2.png);
+    background-size:cover;
+  }
+  
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    color: #dac5a6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center ;
+  }
+  
+  .my-details {
+    margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  }
+  .my-details-p {
+    font-size: 2px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
+  }
+  
+  .details-sec {
+    height: 300px;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    
+  }
+.d-name-div {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #22211d;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.d-name-div::before {
+  content: "Sunil Pareek";
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d9c3ac;
+  transition: left 0.5s ease-in-out;
+}
+
+.d-name-div:hover::before {
+  left: 0; 
+}
+
+.d-name-div:hover {
+  font-weight: bold;
+  color: black; 
+  transition: color 0.3s ease-in-out;
+}
+
+.d-mail-div {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #22211d;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.d-mail-div::before {
+  content: "sunil861795@gmail.com";
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d9c3ac;
+  transition: left 0.5s ease-in-out;
+}
+
+.d-mail-div:hover::before {
+  left: 0; 
+}
+
+.d-mail-div:hover {
+  font-weight: bold;
+  color: black; 
+  transition: color 0.3s ease-in-out;
+}
+
+  
+.d-add-div {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #22211d;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.d-add-div::before {
+  content: "Rajasthan (India)";
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d9c3ac;
+  transition: left 0.5s ease-in-out;
+}
+
+.d-add-div:hover::before {
+  left: 0; 
+}
+
+.d-add-div:hover {
+  font-weight: bold;
+  color: black; 
+  transition: color 0.3s ease-in-out;
+}
+
+.d-number-div {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  height: 50px;
+  background-color: #22211d;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.d-number-div::before {
+  content: "+91 9328241585";
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d9c3ac;
+  transition: left 0.5s ease-in-out;
+}
+
+.d-number-div:hover::before {
+  left: 0; 
+}
+
+.d-number-div:hover {
+  color: black; 
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
